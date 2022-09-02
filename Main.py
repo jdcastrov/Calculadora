@@ -362,3 +362,7 @@ while is_active :
             solucion = hex_dec_recursive(scan_num)
             print("El número en base hexadecimal " ,scan_num, " en base decimal sería " ,solucion )
         menu = 0
+        
+        
+    elif menu == 0:
+        is_active = False   
