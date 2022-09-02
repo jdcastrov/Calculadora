@@ -170,12 +170,12 @@ while is_active :
         num_elej = int(input('Quiere que sea de forma... \n 1. Iterativa \n 2. Recursiva \n Escribe tu respuesta: '))
         if num_elej == 1: 
             print('Iterativa')
-            num = int(input('Ingresa el número que quieres convertir: '))
+            num = input('Ingresa el número que quieres convertir: ')
             dec = Binary.convertIterative(num,"decimal")
             print('El número es: ', dec)
         elif num_elej == 2:
             print('Recursiva')
-            num = int(input('Ingresa el número que quieres convertir: '))
+            num = input('Ingresa el número que quieres convertir: ')
             dec = Binary.convertRecursive(num,"decimal")
             print('El número es: ', dec)
         menu = 0
@@ -185,12 +185,12 @@ while is_active :
         num_elej = int(input('Quiere que sea de forma... \n 1. Iterativa \n 2. Recursiva \n Escribe tu respuesta: '))
         if num_elej == 1: 
             print('Iterativa')
-            num = int(input('Ingresa el número que quieres convertir: '))
+            num = input('Ingresa el número que quieres convertir: ')
             dec = Binary.convertIterative(num,"octal")
             print('El número es: ', dec)
         elif num_elej == 2:
             print('Recursiva')
-            num = int(input('Ingresa el número que quieres convertir: '))
+            num = input('Ingresa el número que quieres convertir: ')
             dec = Binary.convertRecursive(num,"octal")
             print('El número es: ', dec)
         menu = 0
@@ -200,12 +200,12 @@ while is_active :
         num_elej = int(input('Quiere que sea de forma... \n 1. Iterativa \n 2. Recursiva \n Escribe tu respuesta: '))
         if num_elej == 1: 
             print('Iterativa')
-            num = int(input('Ingresa el número que quieres convertir: '))
+            num = input('Ingresa el número que quieres convertir: ')
             dec = Binary.convertIterative(num,"hexadecimal")
             print('El número es: ', dec)
         elif num_elej == 2:
             print('Recursiva')
-            num = int(input('Ingresa el número que quieres convertir: '))
+            num = input('Ingresa el número que quieres convertir: ')
             dec = Binary.convertRecursive(num,"hexadecimal")
             print('El número es: ', dec)
         menu = 0
@@ -265,6 +265,7 @@ while is_active :
             print(' Corresponde al binario ', end= '')
             for k in temporal:
                 print(k, end='' )
+            print()
             
         scan_num = int(input("Escriba el número en el que quiere hacer la conversión: \n"))
         solucion = oct_bin(scan_num)
